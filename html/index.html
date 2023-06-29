@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/c71d7078cd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      #register {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        margin-top: 15px;
+      }
+      #register_now {
+        color: rgba(102, 49, 5, 0.734);
+    
+        text-decoration: none;
+      }
+      #register_now:hover {
+        color: rgba(102, 49, 5, 1);
+      }
+
+      .input-icon {
+        position: absolute;
+        left: 7px;
+        top: calc(50% - 0.5em);
+      }
+
+      input {
+        padding-left: 17px;
+      }
+
+      .input-wrapper {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p
+      id="register"
+      style="font-size: 13px; font-family: 'Courier New', Courier, monospace"
+    >
+      Not a member? <a href="#" id="register_now" style="">Register now</a>
+    </p>
+
+    <container class="body">
+      <container class="card">
+        <img src="../images/pexels-alena-koval-982865.jpg" width="350px" />
+
+        <container class="login_container">
+          <div>
+            <p>CAT LOVERS</p>
+            <p id="welcome">Welcome back!</p>
+          </div>
+
+          <form>
+            <div class="input-wrapper">
+              <i
+                class="fa-solid fa-user input-icon"
+                style="color: rgb(164, 144, 124)"
+              ></i>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="username"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <i
+                class="fa-solid fa-lock input-icon"
+                style="color: rgb(164, 144, 124)"
+              ></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                onClick="myFunction()"
+                id="show_password"
+              />Show Password
+            </div>
+
+            <container class="sign_in">
+              <div class="button">
+                <input type="submit" value="Sign in" />
+              </div>
+
+              <div>
+                <a href="" class="forget">Forget username/password</a>
+              </div>
+            </container>
+
+            <div>
+              <hr />
+              <p id="other_sign_in_method">Or continue with</p>
+            </div>
+            <div class="icons">
+              <a href="#"
+                ><i
+                  class="fa-brands fa-google fa-2xl"
+                  style="color: #a4907c"
+                ></i>
+              </a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-facebook fa-2xl"
+                  style="color: #a4907c"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram fa-2xl"
+                  style="color: #a4907c"
+                ></i
+              ></a>
+            </div>
+          </form>
+        </container>
+      </container>
+    </container>
+  </body>
+</html>
