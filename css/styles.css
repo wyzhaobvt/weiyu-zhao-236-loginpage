@@ -59,6 +59,7 @@ div {
   box-shadow: 5px 5px 41px rgba(0, 0, 0, 0.6);
    width:65%;
   min-width:700px;
+  min-height: 467.84px;
 }
 img {
   border-radius: 15px 5px 5px 15px;
